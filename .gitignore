@@ -1,0 +1,18 @@
+# Build output - build.sh recreates it
+build/
+*.app
+
+# The app's log, and Python's cache
+*.jsonl
+__pycache__/
+
+.DS_Store
+
+# Blender working files and exported scenes - large, and regenerable
+*.blend
+*.blend1
+exports/
+
+# The prebuilt app for people who skip the build (see README). Kept even if a
+# global or enclosing ignore file excludes zips.
+!SpatialPreviewBridge.zip
